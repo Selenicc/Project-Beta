@@ -1,4 +1,4 @@
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .box-container {
    flex-direction: column;
    margin: 0 auto;
@@ -9,5 +9,24 @@
 
   .box-container > .box1 {
     width: 90%;
+  }
+
+  .plans {
+    flex-direction: column;
+    margin: 0 auto;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  .plans > .basic {
+    width: 90%;
+  }
+
+  .bold-text {
+    width: 85%;
+  }
+
+  .subtext {
+    width: 85%;
   }
 }
