@@ -22,11 +22,11 @@
     width: 90%;
   }
 
-  .bold-text {
+  div > .bold-text {
     width: 85%;
   }
 
-  .subtext {
+  div > .subtext {
     width: 85%;
   }
 }
