@@ -1,0 +1,13 @@
+@media (max-width: 768px) {
+  .box-container {
+   flex-direction: column;
+   margin: 0 auto;
+   margin-bottom: 2rem;
+   margin-top: 2rem;
+   gap: 2rem;
+  }
+
+  .box-container > .box1 {
+    width: 90%;
+  }
+}
