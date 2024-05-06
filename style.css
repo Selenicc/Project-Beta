@@ -1,0 +1,353 @@
+:root {
+    /* Colors */
+    --primary-color: #007bff;
+    --secondary-color: #cafff2;
+    --accent-color: #00353f;
+  
+    /* Fonts */
+    --font-family: Arial, sans-serif;
+    --heading-font: 'Roboto', sans-serif;
+    --small-font-size: 16px;
+    --base-font-size: 20px;
+    --large-font-size: 75px;
+  
+    /* Spacing */
+    --spacing-small: 8px;
+    --spacing-medium: 16px;
+    --spacing-large: 24px;
+  
+    /* Border radius */
+    --border-radius: 50px;
+  
+    /* Shadows */
+    --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: #f7f5f4;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-inline: 2rem;
+    height: 6rem;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+li, a {
+    list-style: none;
+    color: green;
+    text-decoration: none;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.home-landing, .home-about, .home-testimonials, .home-faq  {
+    height: 100vh;
+    text-align: center;
+}
+
+.home-landing {
+    height: calc(100vh - 6rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+
+.home-landing p, .home-landing h1 {
+    color: white;
+}
+
+button {
+    border-radius: var(--border-radius);
+    border: none;
+    padding: var(--spacing-medium);
+    background-color: var(--secondary-color);
+    font-weight: bold;
+    color: var(--accent-color);
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #abe1d3;
+}
+
+.secondary {
+    background-color: white;
+    transition: background-color 0.2s ease;
+}
+
+.secondary:hover {
+    background-color: rgb(235, 232, 232);
+}
+
+.disabled {
+    background-color: transparent;
+    transition: background-color 0.1s ease;
+}
+
+.disabled:hover {
+    background-color: white;
+}
+
+
+.h-l-container {
+    background-color: var(--accent-color);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px;
+    border-radius: 4rem;
+}
+
+h1 {
+    font-size: var(--large-font-size);
+    margin: 0;
+    color: var(--accent-color);
+}
+
+h3 {
+    color: var(--accent-color);
+    font-size: 32px;
+}
+
+h6 {
+    text-transform: uppercase;
+    color: var(--accent-color);
+    font-size: var(--small-font-size);
+}
+
+p {
+    margin: 0;
+    font-size: var(--base-font-size);
+    color: var(--accent-color)
+}
+
+.home-about {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.img-container {
+    width: 400px;
+    background-color: white;
+    padding: var(--spacing-large);
+    border-radius: var(--border-radius);
+}
+
+.img-container p {
+    color: var(--accent-color);
+    padding-top: var(--spacing-large);
+}
+
+.home-about img {
+    height: 100%;
+    width: 100%;
+    border-radius: var(--border-radius);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: left;
+    gap: 1rem;
+}
+
+.container button {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+}
+
+.dot {
+    margin-right: 10px;
+    background-color:#f9ae9e;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+}
+
+.home-testimonials {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home-testimonials .container {
+    margin-left: 6rem;
+}
+
+.container-row {
+    display: flex;
+    gap: 20px;
+}
+
+.carousel {
+    display: flex;
+    text-align: left;
+    gap: 20px;
+}
+
+.carousel-container {
+    width: 400px;
+    height: 250px;
+    background-color: var(--accent-color);
+    padding: var(--spacing-large);
+    border-radius: var(--border-radius);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.carousel-container:nth-of-type(even) {
+    background-color: #92954b;
+}
+
+.carousel-container p, .carousel-container h6 {
+    color: white;
+}
+
+.home-featured {
+    margin: 6rem;
+    background-color: #fad4b6;
+    border-radius: var(--border-radius);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.brands {
+    display: flex;
+    gap: 40px;
+}
+
+
+
+.faq-container {
+    margin-inline: 12rem;
+}
+
+
+.home-faq h1 {
+    margin-bottom: 1rem;
+}
+
+
+
+
+.accordion {
+    gap: 1.5rem;
+    display: flex;
+    flex-direction: column;
+  .accordion-item {
+    background-color: white;
+    padding: var(--spacing-large);
+    border-radius: var(--border-radius);
+  }
+   .accordion-item button {
+    position: relative;
+    display: block;
+    text-align: left;
+    width: 100%;
+    padding: 1em 1em;
+    color: var(--accent-color);
+    font-size: 1.15rem;
+    font-weight: 400;
+    border: none;
+    background: none;
+    outline: none;
+    &:hover, &:focus {
+      cursor: pointer;
+      color: var(--accent-color);
+      &::after {
+        cursor: pointer;
+        color: var(--accent-color);
+        border: 1px solid ;
+      }
+    }
+    .accordion-title {
+      padding: 1em 1.5em 1em 0;
+    }
+    .icon {
+      display: inline-block;
+      position: absolute;
+      top: 18px;
+      right: 0;
+      width: 22px;
+      height: 22px;
+      border: 1px solid;
+      border-radius: 22px;
+      &::before {
+        display: block;
+        position: absolute;
+        content: '';
+        top: 10px;
+        left: 5px;
+        width: 12px;
+        height: 2px;
+        background: currentColor;
+      }
+      &::after {
+        display: block;
+        position: absolute;
+        content: '';
+        top: 5px;
+        left: 10px;
+        width: 2px;
+        height: 12px;
+        background: currentColor;
+      }
+    }
+  }
+  button[aria-expanded='true'] {
+    color: var(--accent-color);
+    .icon {
+      &::after {
+        width: 0;
+      }
+    }
+    + .accordion-content {
+      opacity: 1;
+      max-height: 9em;
+      transition: all 200ms linear;
+      will-change: opacity, max-height;
+    }
+  }
+  .accordion-content {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 200ms linear, max-height 200ms linear;
+    will-change: opacity, max-height;
+    p {
+      font-size: 1rem;
+      font-weight: 300;
+      margin: 2em 0;
+    }
+  }
+}
+
+footer {
+    height: 6rem;
+    background-color: #00353f;
+}
