@@ -9,6 +9,24 @@
     <title>About Us</title>
 </head>
 <body>
+
+    <nav class="bg-white shadow-lg">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div>
+                    <a class="text-gray-800 text-2xl font-bold" href="#">
+                        <img src="{{url_for('static', filename='logo.png')}}" alt="NutriBoom Logo" class="h-12">
+                    </a>
+                </div>
+                <div class="flex items-center space-x-6">
+                    <a class="text-gray-800 hover:text-yellow-600" href="index.html">Home</a>
+                    <a class="text-gray-800 hover:text-yellow-600" href="about.html">About</a>
+                    <a class="text-gray-800 hover:text-yellow-600" href="services.html">Services</a>
+                    <a class="text-gray-800 hover:text-yellow-600" href="contact.html">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
     <main class=" flex flex-col gap-8 mt-8 mx-12 items-center">
         <section class="flex gap-4 w-full justify-between items-start max-w-[80rem] flex-col md:flex-row">
             <div class="flex items-center"><h1 class="font-black text-7xl">Our Story</h1> <ion-icon name="arrow-down-outline" class="-rotate-45 text-8xl mt-2"></ion-icon></div>
@@ -63,5 +81,15 @@
             </div>
         </section>
     </main>
+    <footer class="bg-gray-800 py-6">
+        <div class="container mx-auto text-gray-300 flex flex-col items-center">
+            <p class="mb-4">© 2024 NutriBoom. All rights reserved.</p>
+            <div class="flex space-x-4">
+                <a href="#" class="hover:text-yellow-500">Terms of Service</a>
+                <a href="#" class="hover:text-yellow-500">Privacy Policy</a>
+                <a href="#" class="hover:text-yellow-500">Cookie Policy</a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
