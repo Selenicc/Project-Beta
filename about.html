@@ -2,16 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Contact</title>
+    <title>About Us</title>
 </head>
 <body>
 
     <header class="bg-white">
-        <nav class="mt-8 z-10 w-full">
+        <nav class="z-10 w-full mt-8">
             <div class="container mx-auto px-8 md:px-12 lg:px-6">
                 <div class="relative flex flex-wrap items-center justify-between gap-6 py-2 md:gap-0 md:py-4">
                     <input aria-hidden="true" type="checkbox" name="toggle_nav" id="toggle_nav" class="peer hidden" />
@@ -69,54 +69,59 @@
             </div>
         </nav>
     </header>
-    
-    <main class="m-10 border-8 border-slate-800 h-10px flex rounded-3xl gap-2 p-5 flex-col md:flex-row">
-        <div class="flex-auto p-2 md:w-2/5"> 
-            <h4 class="text-xl font-bold">Untitled</h4>
-            <div class="flex mt-8 gap-4 flex-wrap md:flex-col">
-                <div class="flex-auto">
-                    <div class="flex gap-2 content-start">
-                        <ion-icon name="chatbubble-ellipses-outline" class="mt-1.5"></ion-icon>
-                        <div>
-                            <h5 class="font-semibold text-lg m-0 p-0">Chat with us</h5>
-                            <p>Lorem ipsum dolor sit amet consectetur.</p>
-                        </div>
+    <main class=" flex flex-col gap-8 mt-16 mx-12 items-center">
+        <section class="flex gap-4 w-full justify-between items-start max-w-[80rem] flex-col md:flex-row">
+            <div class="flex items-center"><h1 class="font-black text-7xl">Our Story</h1> <ion-icon name="arrow-down-outline" class="-rotate-45 text-8xl mt-2"></ion-icon></div>
+            <div class="w-full md:w-3/5 text-lg mt-4"><p class="font-semibold mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis dicta distinctio laudantium vitae nam neque, quidem ea assumenda? Temporibus accusamus, quae laboriosam dicta corrupti autem quasi cum quaerat unde perferendis?</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat minus amet, ipsum ullam exercitationem culpa! Nisi, delectus repellendus ad laboriosam quas magnam aspernatur sint inventore sunt, voluptatem quaerat alias ex reprehenderit dolore rerum quasi maxime, aliquid dolores. Unde id, accusantium voluptas mollitia dolorem voluptatibus vero accusamus autem molestias, nam fuga dolore nostrum architecto quidem voluptate nulla ab quisquam alias pariatur vitae! Ipsa itaque iure quos rem officiis a nulla inventore et doloribus perferendis, voluptatibus voluptatem maxime porro ab quod facilis?</p></div>
+        </section>
+        <section class="bg-slate-100 -mx-12 px-12 py-16 flex flex-col items-center rounded-lg">
+            <h1 class="mb-12 text-6xl font-bold">Meet our Team</h1>
+            
+            <div class="flex flex-wrap gap-8 justify-around">
+                <div class="h-[350px] w-[300px] bg-lime-400 rounded-lg flex flex-col items-center p-12">
+                    <div class="h-32 w-32 bg-slate-400 rounded-full overflow-hidden">
+                        <img src="person.png" alt="">
                     </div>
+                    <span class="font-bold text-3xl mt-12">John Doe</span>
+                    <span class="text-xl">CEO</span>
                 </div>
-                <div class="flex-auto">
-                    <div class="flex gap-2">
-                        <ion-icon name="compass-outline" class="mt-1.5"></ion-icon>
-                        <div>
-                            <h5 class="font-semibold text-lg">Visit Us</h5>
-                            <p>Lorem ipsum dolor sit amet consectetur.</p>
-                        </div>
+                <div class="h-[350px] w-[300px] bg-lime-400 rounded-lg flex flex-col items-center p-12">
+                    <div class="h-32 w-32 bg-slate-400 rounded-full overflow-hidden">
+                        <img src="person.png" alt="">
                     </div>
+                    <span class="font-bold text-3xl mt-12">John Doe</span>
+                    <span class="text-xl">CEO</span>
                 </div>
-                <div class="flex-auto">
-                    <div class="flex gap-2">
-                        <ion-icon name="call-outline" class="mt-1.5"></ion-icon>
-                        <div>
-                            <h5 class="font-semibold text-lg">Call us</h5>
-                            <p>Lorem ipsum dolor sit amet consectetur.</p>
-                        </div>
+                <div class="h-[350px] w-[300px] bg-lime-400 rounded-lg flex flex-col items-center p-12">
+                    <div class="h-32 w-32 bg-slate-400 rounded-full overflow-hidden">
+                        <img src="person.png" alt="">
                     </div>
+                    <span class="font-bold text-3xl mt-12">John Doe</span>
+                    <span class="text-xl">CEO</span>
+                </div>
+                <div class="h-[350px] w-[300px] bg-lime-400 rounded-lg flex flex-col items-center p-12">
+                    <div class="h-32 w-32 bg-slate-400 rounded-full overflow-hidden">
+                        <img src="person.png" alt="">
+                    </div>
+                    <span class="font-bold text-3xl mt-12">John Doe</span>
+                    <span class="text-xl">CEO</span>
                 </div>
             </div>
-        </div>
-        <div class="flex-auto md:w-3/5 bg-lime-400 rounded-3xl py-16 px-8">
-            <h2 class="text-4xl font-semibold leading-10 max-w-2xl ">Lorem ipsum dolor sit, amet consectetur adipisicing elit Fugiat?</h2>
-            <h6 class="mt-2 mb-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, veniam totam similique distinctio voluptatibus alias.</h6>
-            <form action="">
-                <input type="text" placeholder="Your Name" class="mb-5 w-full bg-transparent border-b-2 border-slate-800 placeholder:text-slate-800/70 active:outline-none"><br>
-                <input type="text" placeholder="example@email.com" class="mb-5 pb-1 w-full bg-transparent border-b-2 border-slate-800 placeholder:text-slate-800/70"><br>
-                <textarea name="idea" id="idea" cols="100" rows="3" class="w-full mb-4 bg-transparent border-b-2 border-slate-800 placeholder:text-slate-800/70" placeholder="Write about your idea"></textarea>
-                <p class="text-slate-800/90 text-base">How can we help?</p>
-                <input type="checkbox" class="accent-slate-300 bg-transparent"> Web Dev<br>
-                <input type="checkbox" class="accent-slate-300 bg-transparent"> Design<br>
-                <input type="checkbox" class="accent-slate-300 mb-5 bg-transparent"> Other
-                <button class="w-full bg-slate-700 rounded-lg py-2 text-white mt-2 font-semibold">SUBMIT</button>
-            </form>
-        </div>
+        </section>
+        <section class="flex flex-col gap-24 items-center max-w-[80rem] mb-8">
+            <div class="flex flex-col md:flex-row gap-8 pt-4 justify-between border-solid border-t-8 bt-8 border-slate-200 rounded-lg items-center">
+                <h1 class="font-extrabold text-8xl">$50B+</h1> 
+                <p class="w-3/5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti nobis neque nemo dolores doloribus quasi maxime aut vitae doloremque nulla animi debitis dolorum saepe repudiandae praesentium, reiciendis laborum totam quas aliquam quis ducimus vel officia earum numquam? Praesentium, magni consequuntur.</p>
+            </div>
+            <div class="flex flex-col md:flex-row gap-8 pt-4 justify-between border-solid border-t-8 bt-8 border-slate-200 rounded-lg items-center">
+                <h1 class="font-extrabold text-8xl">$50B+</h1> 
+                <p class="w-3/5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti nobis neque nemo dolores doloribus quasi maxime aut vitae doloremque nulla animi debitis dolorum saepe repudiandae praesentium, reiciendis laborum totam quas aliquam quis ducimus vel officia earum numquam? Praesentium, magni consequuntur.</p>
+            </div>
+            <div class="flex flex-col md:flex-row gap-8 pt-4 justify-between border-solid border-t-8 bt-8 border-slate-200 rounded-lg items-center">
+                <h1 class="font-extrabold text-8xl">$50B+</h1> 
+                <p class="w-3/5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti nobis neque nemo dolores doloribus quasi maxime aut vitae doloremque nulla animi debitis dolorum saepe repudiandae praesentium, reiciendis laborum totam quas aliquam quis ducimus vel officia earum numquam? Praesentium, magni consequuntur.</p>
+            </div>
+        </section>
     </main>
     <footer class="w-full bg-gray-100 dark:bg-gray-900 py-16">
         <div class="md:px-12 lg:px-28">
