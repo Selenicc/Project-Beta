@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    
 </head>
 
 <body>
@@ -113,7 +114,7 @@
             Scroll down for more content
         </div>
     </svg>
-    <section class="h-[60vh] w-full bg-[#fff4ec]">
+    <section class="min-h-[60vh] w-full bg-[#fff4ec]">
         <div class="flex flex-cols px-20">
             <div class="w-1/2"><img src="{{url_for('static', filename='cta.png')}}" data-aos="zoom-in class=" h-[50vh] w-[60vh]"></div>
             <div class="w-1/2 text-yellow-800 " data-aos="fade-left">
@@ -239,11 +240,8 @@
         </div>
     </section>
 
-    <script>
-        AOS.init();
-      </script>
 
-<footer class="w-full bg-gray-100 dark:bg-gray-900 py-16">
+<footer class="w-full bg-gray-100 dark:bg-gray-900 py-16 mt-20">
     <div class="md:px-12 lg:px-28">
       <div class="container m-auto space-y-6 text-gray-600 dark:text-gray-300">
         <img src="images/logo.svg" alt="logo tailus" class="m-auto w-40" />
@@ -316,6 +314,11 @@
       </div>
     </div>
   </footer>
+
+
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
